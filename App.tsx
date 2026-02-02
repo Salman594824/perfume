@@ -53,7 +53,7 @@ const App: React.FC = () => {
         <div className="relative z-10 text-center px-6">
           <span className="text-white text-xs font-medium uppercase tracking-[0.4em] mb-6 block drop-shadow-lg">Artisanal Perfumery</span>
           <h1 className="text-white text-6xl md:text-8xl font-serif font-light mb-8 drop-shadow-xl">
-            L'Essence
+            Montclaire
           </h1>
           <p className="text-white/90 max-w-xl mx-auto text-lg md:text-xl font-light leading-relaxed mb-10">
             A celebration of the ephemeral. Crafted in small batches, infused with emotion, and discovered through intelligence.
@@ -146,7 +146,7 @@ const App: React.FC = () => {
             <span className="text-stone-400 text-xs font-medium uppercase tracking-[0.3em] block mb-6">Our Philosophy</span>
             <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">Beyond Fragrance: A Journey for the Senses</h2>
             <p className="text-stone-600 leading-relaxed mb-8">
-              At L'Essence, we believe that perfume is the most intimate form of memory. We don't just blend molecules; we translate emotions into olfactory compositions. 
+              At Montclaire, we believe that perfume is the most intimate form of memory. We don't just blend molecules; we translate emotions into olfactory compositions. 
             </p>
             <p className="text-stone-600 leading-relaxed mb-10">
               Each raw material is ethically sourced from small independent farmers worldwide, ensuring that every drop tells a story of craftsmanship and respect for the earth.
@@ -172,7 +172,7 @@ const App: React.FC = () => {
       <footer className="bg-stone-50 border-t border-stone-200 py-20 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
-            <div className="text-2xl font-serif tracking-widest uppercase mb-8">L'Essence</div>
+            <div className="text-2xl font-serif tracking-widest uppercase mb-8">Montclaire</div>
             <p className="text-stone-500 max-w-sm mb-8">Sign up for exclusive access to small-batch releases and private collection previews.</p>
             <form className="flex max-w-sm">
               <input type="email" placeholder="Email Address" className="flex-1 bg-transparent border-b border-stone-300 py-3 focus:outline-none focus:border-stone-900 transition-colors" />
@@ -199,7 +199,7 @@ const App: React.FC = () => {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-stone-400 uppercase tracking-widest">
-          <span>&copy; 2024 L'Essence Private Blend. All rights reserved.</span>
+          <span>&copy; 2024 Montclaire Private Blend. All rights reserved.</span>
           <div className="flex gap-8">
             <a href="#" className="hover:text-stone-900">Privacy Policy</a>
             <a href="#" className="hover:text-stone-900">Terms of Service</a>
