@@ -20,7 +20,7 @@ const SCENTS = [
   { name: 'VELVET DOMINION', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=1200' }
 ];
 
-const ADMIN_PASSWORD = "admin"; 
+const ADMIN_PASSWORD = "@nnh#gg/*dd;)Allahoakber_|!kkahi--n3335266"; 
 
 const App = () => {
   // Persistence for Products
