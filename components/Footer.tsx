@@ -48,52 +48,13 @@ const Footer: React.FC<FooterProps> = ({ settings, policies, onPolicyClick, onNa
               An exquisite destination for the world's most luxurious scents. Crafting sensory experiences that linger long after the moment passes.
             </p>
             <div className="flex space-x-5 items-center pt-2">
+              <a href={settings.social.instagram} className="text-gray-500 hover:text-[#D4AF37] transition-all" target="_blank" rel="noopener noreferrer"><Instagram size={18} /></a>
+              <a href={settings.social.pinterest} className="text-gray-500 hover:text-[#D4AF37] transition-all" target="_blank" rel="noopener noreferrer"><PinterestIcon size={18} /></a>
+              <a href={settings.social.whatsapp} className="text-gray-500 hover:text-[#D4AF37] transition-all" target="_blank" rel="noopener noreferrer"><WhatsAppIcon size={18} /></a>
+              <a href={settings.social.tiktok} className="text-gray-500 hover:text-[#D4AF37] transition-all" target="_blank" rel="noopener noreferrer"><TikTokIcon size={18} /></a>
+            </div>
+          </div>
 
-  {settings.social?.instagram && (
-    <a
-      href={settings.social.instagram}
-      className="text-gray-500 hover:text-[#D4AF37] transition-all"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Instagram size={18} />
-    </a>
-  )}
-
-  {settings.social?.pinterest && (
-    <a
-      href={settings.social.pinterest}
-      className="text-gray-500 hover:text-[#D4AF37] transition-all"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <PinterestIcon size={18} />
-    </a>
-  )}
-
-  {settings.social?.whatsapp && (
-    <a
-      href={settings.social.whatsapp}
-      className="text-gray-500 hover:text-[#D4AF37] transition-all"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <WhatsAppIcon size={18} />
-    </a>
-  )}
-
-  {settings.social?.tiktok && (
-    <a
-      href={settings.social.tiktok}
-      className="text-gray-500 hover:text-[#D4AF37] transition-all"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <TikTokIcon size={18} />
-    </a>
-  )}
-
-</div>
           {/* Nav Col 1 */}
           <div className="md:col-span-2">
             <h4 className="text-[9px] font-bold uppercase tracking-[0.4em] mb-8 text-[#D4AF37]">The Boutique</h4>
