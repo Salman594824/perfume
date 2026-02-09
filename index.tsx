@@ -13,7 +13,7 @@ import { Product, SiteSettings, PolicyPage, Order, OrderStatus } from './types.t
 import { Lock, X, ShoppingBag, ArrowRight, MapPin, CheckCircle, Truck, User, Home, Loader2, MessageCircle } from 'lucide-react';
 
 const SCENTS = [
-  { name: 'FROSTED SERENITY', image: 'https://instasize.com/p/c49007578ec658169c01762bf9e2ddff475e8a98088a9975036c3a61e2266bdd' },
+  { name: 'FROSTED SERENITY', image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=1200' },
   { name: 'WILD HEART', image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1200' },
   { name: 'SILENT GRACE', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=1200' },
   { name: 'MIDNIGHT REVERIE', image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=1200' },
