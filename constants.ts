@@ -137,10 +137,10 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
         phone: settings.contact.phone,
       },
       social: {
-        instagram: formData.get('instagram') as string,
-        pinterest: formData.get('pinterest') as string,
+        instagram: formData.get('https://instagram.com/montclaire01') as string,
+        pinterest: formData.get('https://pinterest.com/montclaire91') as string,
         whatsapp: formData.get('whatsapp') as string,
-        tiktok: formData.get('tiktok') as string,
+        tiktok: formData.get('https://tiktok.com/@montclaire001') as string,
       }
     };
     onUpdateSettings(newSettings);
