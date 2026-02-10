@@ -9,7 +9,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 245,
     category: 'Unisex',
     stockStatus: StockStatus.IN_STOCK,
-    images: ['https://picsum.photos/seed/noir1/800/1000', 'https://picsum.photos/seed/noir2/800/1000'],
+    images: ['https://postimg.cc/rdc2cNcH' target='_blank'><img src='https://i.postimg.cc/rdc2cNcH/Zastyvsie-foto-Bleu-de-Chanel.jpg' border='0' alt='Zastyvsie-foto-Bleu-de-Chanel'></a>', 'https://postimg.cc/rdc2cNcH' target='_blank'><img src='https://i.postimg.cc/rdc2cNcH/Zastyvsie-foto-Bleu-de-Chanel.jpg' border='0' alt='Zastyvsie-foto-Bleu-de-Chanel'></a>'],
     notes: {
       top: ['Bergamot', 'Saffron'],
       middle: ['Bulgarian Rose', 'Oud'],
