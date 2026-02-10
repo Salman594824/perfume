@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { SiteSettings, PolicyPage } from '../types';
 import { Instagram, Send, Mail, MapPin } from 'lucide-react';
