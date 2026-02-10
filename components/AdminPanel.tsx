@@ -46,7 +46,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 210,
     category: 'Women',
     stockStatus: StockStatus.IN_STOCK,
-    images: ['https://picsum.photos/seed/ivory1/800/1000'],
+    images: ['https://postimg.cc/rdc2cNcH' target='_blank'><img src='https://i.postimg.cc/rdc2cNcH/Zastyvsie-foto-Bleu-de-Chanel.jpg' border='0' alt='Zastyvsie-foto-Bleu-de-Chanel'></a>'],
     notes: {
       top: ['White Pear', 'Aldehydes'],
       middle: ['Lily of the Valley', 'Iris'],
