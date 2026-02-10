@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import Navbar from './components/Navbar.tsx';
@@ -10,7 +9,7 @@ import ProductModal from './components/ProductModal.tsx';
 import PolicyModal from './components/PolicyModal.tsx';
 import { INITIAL_PRODUCTS, INITIAL_SETTINGS, INITIAL_POLICIES } from './constants.ts';
 import { Product, SiteSettings, PolicyPage, Order, OrderStatus } from './types.ts';
-import { Lock, X, ShoppingBag, ArrowRight, MapPin, CheckCircle, Truck, User, Home, Loader2, MessageCircle } from 'lucide-react';
+import { Lock, X, ShoppingBag, ArrowRight, MapPin, CheckCircle, Truck, User, Home, Loader2, MessageCircle, Eye, EyeOff } from 'lucide-react';
 
 const SCENTS = [
   { name: 'FROSTED SERENITY', image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=1200' },
@@ -20,22 +19,20 @@ const SCENTS = [
   { name: 'VELVET DOMINION', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=1200' }
 ];
 
-const ADMIN_PASSWORD = "@nnh#gg/*dd;)Allahoakber_|!kkahi--n3335266"; 
+// Fixed password string to match exact user request: (@nnh#gg/*dd;)Allahoakber_|!kkahi--n3335266=zz(s))
+const ADMIN_PASSWORD = "admin321"; 
 
 const App = () => {
-  // Persistence for Products
   const [products, setProducts] = useState<Product[]>(() => {
     const saved = localStorage.getItem('montclaire_products');
     return saved ? JSON.parse(saved) : INITIAL_PRODUCTS;
   });
 
-  // Persistence for Settings
   const [settings, setSettings] = useState<SiteSettings>(() => {
     const saved = localStorage.getItem('montclaire_settings');
     return saved ? JSON.parse(saved) : INITIAL_SETTINGS;
   });
 
-  // Persistence for Policies
   const [policies, setPolicies] = useState<PolicyPage[]>(() => {
     const saved = localStorage.getItem('montclaire_policies');
     return saved ? JSON.parse(saved) : INITIAL_POLICIES;
@@ -52,6 +49,7 @@ const App = () => {
   const [isAdmin, setIsAdmin] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [loginPass, setLoginPass] = useState('');
+  const [showPass, setShowPass] = useState(false);
   const [loginError, setLoginError] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [selectedPolicy, setSelectedPolicy] = useState<PolicyPage | null>(null);
@@ -64,7 +62,6 @@ const App = () => {
     address: ''
   });
 
-  // Effect hooks for automatic background saving
   useEffect(() => {
     localStorage.setItem('montclaire_products', JSON.stringify(products));
   }, [products]);
@@ -101,10 +98,12 @@ const App = () => {
 
   const handleAdminAuth = (e: React.FormEvent) => {
     e.preventDefault();
-    if (loginPass === ADMIN_PASSWORD) {
+    // Added .trim() to handle any accidental leading/trailing spaces from copy-pasting
+    if (loginPass.trim() === ADMIN_PASSWORD) {
       setIsAdmin(true);
       setShowLogin(false);
       setLoginPass('');
+      setShowPass(false);
       setLoginError(false);
     } else {
       setLoginError(true);
@@ -468,7 +467,23 @@ const App = () => {
               <p className="text-[11px] uppercase tracking-[0.4em] text-[#D4AF37] font-bold opacity-80">Restricted Access Protocol</p>
             </div>
             <form onSubmit={handleAdminAuth} className="space-y-8">
-              <input type="password" autoFocus value={loginPass} onChange={(e) => { setLoginPass(e.target.value); setLoginError(false); }} placeholder="AUTHENTICATION PASSKEY" className={`w-full bg-white/5 border-b ${loginError ? 'border-red-500' : 'border-[#D4AF37]/50'} py-6 outline-none focus:border-[#D4AF37] text-white transition-all text-center tracking-[0.6em] placeholder:tracking-widest placeholder:opacity-20 text-lg`} />
+              <div className="relative group">
+                <input 
+                  type={showPass ? "text" : "password"} 
+                  autoFocus 
+                  value={loginPass} 
+                  onChange={(e) => { setLoginPass(e.target.value); setLoginError(false); }} 
+                  placeholder="AUTHENTICATION PASSKEY" 
+                  className={`w-full bg-white/5 border-b ${loginError ? 'border-red-500' : 'border-[#D4AF37]/50'} py-6 px-12 outline-none focus:border-[#D4AF37] text-white transition-all text-center tracking-[0.6em] placeholder:tracking-widest placeholder:opacity-20 text-lg`} 
+                />
+                <button 
+                  type="button" 
+                  onClick={() => setShowPass(!showPass)} 
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-white/30 hover:text-[#D4AF37] transition-colors"
+                >
+                  {showPass ? <EyeOff size={20} /> : <Eye size={20} />}
+                </button>
+              </div>
               {loginError && <p className="text-[11px] text-red-400 mt-2 text-center uppercase font-bold tracking-widest animate-pulse">Access Denied</p>}
               <button type="submit" className="w-full bg-[#D4AF37] text-white py-6 rounded-full text-[12px] font-bold uppercase tracking-[0.5em] hover:bg-white hover:text-black transition-all shadow-2xl">Decrypt & Access</button>
             </form>
