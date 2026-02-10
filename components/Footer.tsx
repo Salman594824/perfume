@@ -47,39 +47,14 @@ const Footer: React.FC<FooterProps> = ({ settings, policies, onPolicyClick, onNa
             <p className="text-[11px] text-gray-500 leading-relaxed max-w-xs font-light tracking-wider">
               An exquisite destination for the world's most luxurious scents. Crafting sensory experiences that linger long after the moment passes.
             </p>
-              <div className="flex gap-4">
-  <a
-    href="https://instagram.com/montclaire01"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <Instagram size={18} />
-  </a>
+            <div className="flex space-x-5 items-center pt-2">
+              <a href={settings.social.instagram} className="text-gray-500 hover:text-[#D4AF37] transition-all" target="_blank" rel="noopener noreferrer"><Instagram size={18} /></a>
+              <a href={settings.social.pinterest} className="text-gray-500 hover:text-[#D4AF37] transition-all" target="_blank" rel="noopener noreferrer"><PinterestIcon size={18} /></a>
+              <a href={settings.social.whatsapp} className="text-gray-500 hover:text-[#D4AF37] transition-all" target="_blank" rel="noopener noreferrer"><WhatsAppIcon size={18} /></a>
+              <a href={settings.social.tiktok} className="text-gray-500 hover:text-[#D4AF37] transition-all" target="_blank" rel="noopener noreferrer"><TikTokIcon size={18} /></a>
+            </div>
+          </div>
 
-  <a
-    href="https://pinterest.com/montclaire91"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <PinterestIcon size={18} />
-  </a>
-
-  <a
-    href="https://tiktok.com/@montclaire001"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <TikTokIcon size={18} />
-  </a>
-
-  <a
-    href="https://wa.me/923371292112"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <WhatsAppIcon size={18} />
-  </a>
-</div>
           {/* Nav Col 1 */}
           <div className="md:col-span-2">
             <h4 className="text-[9px] font-bold uppercase tracking-[0.4em] mb-8 text-[#D4AF37]">The Boutique</h4>
