@@ -4,7 +4,7 @@ import { Product, StockStatus, SiteSettings, PolicyPage } from './types';
 export const INITIAL_PRODUCTS: Product[] = [
   {
     id: '1',
-    name: 'Noir Éclat',
+    name: 'Draculas',
     brand: 'MONTCL△IRÉ Privé',
     price: 245,
     category: 'Unisex',
