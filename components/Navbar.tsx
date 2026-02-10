@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X, ShoppingBag, Search, MapPin } from 'lucide-react';
 
