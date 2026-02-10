@@ -5,7 +5,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   {
     id: '1',
     name: 'Draculas',
-    brand: 'MONTCL△IRÉ Privé',
+    brand: 'Draculas',
     price: 245,
     category: 'Unisex',
     stockStatus: StockStatus.IN_STOCK,
@@ -22,8 +22,8 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: '2',
-    name: 'Emerald Vetiver',
-    brand: 'MONTCL△IRÉ',
+    name: 'Draculas',
+    brand: 'Draculas',
     price: 185,
     discountPrice: 155,
     category: 'Men',
@@ -41,8 +41,8 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: '3',
-    name: 'Ivory Musk',
-    brand: 'MONTCL△IRÉ',
+    name: 'Draculas',
+    brand: 'Draculas',
     price: 210,
     category: 'Women',
     stockStatus: StockStatus.IN_STOCK,
