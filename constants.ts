@@ -1,9 +1,10 @@
+
 import { Product, StockStatus, SiteSettings, PolicyPage } from './types';
 
 export const INITIAL_PRODUCTS: Product[] = [
   {
     id: '1',
-    name: 'Noir Éclat',
+    name: 'Draculas',
     brand: 'MONTCL△IRÉ Privé',
     price: 245,
     category: 'Unisex',
@@ -21,7 +22,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: '2',
-    name: 'Emerald Vetiver',
+    name: 'Emerald Draculas',
     brand: 'MONTCL△IRÉ',
     price: 185,
     discountPrice: 155,
@@ -40,7 +41,7 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: '3',
-    name: 'Ivory Musk',
+    name: 'Ivory Draculas',
     brand: 'MONTCL△IRÉ',
     price: 210,
     category: 'Women',
