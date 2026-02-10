@@ -28,7 +28,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     discountPrice: 155,
     category: 'Men',
     stockStatus: StockStatus.LIMITED_STOCK,
-    images: ['https://picsum.photos/seed/vetiver1/800/1000'],
+    images: ['49	https://postimg.cc/rdc2cNcH' target='_blank'><img src='https://i.postimg.cc/rdc2cNcH/Zastyvsie-foto-Bleu-de-Chanel.jpg' border='0' alt='Zastyvsie-foto-Bleu-de-Chanel'></a>'],
     notes: {
       top: ['Grapefruit', 'Pink Pepper'],
       middle: ['Geranium', 'Vetiver'],
